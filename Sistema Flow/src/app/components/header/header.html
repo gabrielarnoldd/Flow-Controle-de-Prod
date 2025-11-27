@@ -1,0 +1,175 @@
+<header class="header">
+  <div class="container">
+    <img width="200px" src="../../flowlogo.png" alt="logo">
+
+    <div class="actions">
+      <button class="btn">Alerta ( 2 )</button>
+      <button class="btn">Relatórios</button>
+      <button class="online">Sistema Online</button>
+    </div>
+  </div>
+</header>
+
+<main class="cards-container">
+
+  <div class="card">
+    <h3 class="card-title">
+      <img width="30px" src="../../icon-TempoDeProduçãoHoje.png" alt="icon">
+      TEMPO DE PRODUÇÃO HOJE
+    </h3>
+    <p class="value">9H 42MIN</p>
+    <p class="sub">DE 10 HORAS PROGRAMADAS (96,25%)</p>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title">
+      <img width="30px" src="../../icon-PeçasProduzidas.png" alt="icon">
+      PEÇAS PRODUZIDAS
+    </h3>
+    <p class="value">521</p>
+    <p class="sub">META: 450 (115,77%)</p>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title">
+      <img width="30px" src="../../icon-CustoPorHora.png" alt="icon">
+      CUSTO POR HORA
+    </h3>
+    <p class="value">R$ 168,98</p>
+    <p class="sub">INCLUINDO MÃO DE OBRA</p>
+  </div>
+
+</main>
+
+<div class="menu-container">
+  <button class="menu-btn active" id="pag-atual">
+    <img src="../../icon-visaoGeral.png" alt="" class="icon">
+    <span>VISÃO GERAL</span>
+  </button>
+
+  <button class="menu-btn" (click)="changeInfoToFluxo()">
+    <img src="../../icon-fluxo.png" alt="" class="icon">
+    <span>FLUXO</span>
+  </button>
+
+  <button class="menu-btn" (click)="changeInfoToTaktTime()">
+    <img src="../../icon-taktTime.png" alt="" class="icon">
+    <span>TAKT TIME</span>
+  </button>
+
+  <button class="menu-btn" (click)="changeInfoToMaquinas()">
+    <img src="../../icon-maquinas.png" alt="" class="icon">
+    <span>MÁQUINAS</span>
+  </button>
+
+  <button class="menu-btn" (click)="changeInfoToMateriais()">
+    <img src="../../icon-Materiais.png" alt="" class="icon">
+    <span>MATERIAIS</span>
+  </button>
+</div>
+
+<!-- Card -->
+<main class="painel-producao-flow">
+
+  <!-- Card 1 -->
+  <div class="box-producao-flow">
+    <h2 class="titulo-peca-flow">PEÇA C3</h2>
+    <span class="status-flow status-concluido-flow">PRODUZIDO</span>
+    <p class="info-flow">ORDEM: 3223-344</p>
+    <p class="info-flow">MÁQUINA: LINHA 03</p>
+    <p class="info-flow">TEMPO ESTIMADO: 2H 45MIN</p>
+
+    <div class="barra-container-flow">
+      <span class="texto-progresso-flow">PROGRESSO: 100 / 100</span>
+      <div class="barra-progresso-flow">
+        <div class="barra-preenchida-flow" style="width:100%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="box-producao-flow">
+    <h2 class="titulo-peca-flow">PEÇA H8</h2>
+    <span class="status-flow status-andamento-flow">EM PRODUÇÃO</span>
+    <p class="info-flow">ORDEM: 5647-214</p>
+    <p class="info-flow">MÁQUINA: LINHA 044</p>
+    <p class="info-flow">TEMPO ESTIMADO: 6H 30MIN</p>
+
+    <div class="barra-container-flow">
+      <span class="texto-progresso-flow">PROGRESSO: 67 / 100</span>
+      <div class="barra-progresso-flow">
+        <div class="barra-preenchida-flow" style="width:67%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="box-producao-flow">
+    <h2 class="titulo-peca-flow">PEÇA V5</h2>
+    <span class="status-flow status-andamento-flow">EM PRODUÇÃO</span>
+    <p class="info-flow">ORDEM: 9742-453</p>
+    <p class="info-flow">MÁQUINA: LINHA 122</p>
+    <p class="info-flow">TEMPO ESTIMADO: 1H 15MIN</p>
+
+    <div class="barra-container-flow">
+      <span class="texto-progresso-flow">PROGRESSO: 28 / 100</span>
+      <div class="barra-progresso-flow">
+        <div class="barra-preenchida-flow" style="width:28%;"></div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<div class="painel-container">
+
+  <!-- Título com ícone -->
+  <div class="painel-header">
+    <img src="../../icon-PainelDeProdução.png" class="painel-icon" alt="Ícone">
+    <h2>PAINEL DE PRODUÇÃO</h2>
+  </div>
+
+</div>
+
+<!-- Cards -->
+<div class="painel-cards">
+
+  <div class="painel-card">
+    <h3>EFICIÊNCIA GERAL (OEE)</h3>
+    <p class="big-number">82,4%</p>
+    <span class="tag green">+2,4%</span>
+    <p class="desc">COMP. META ANTERIOR</p>
+  </div>
+
+  <div class="painel-card">
+    <h3>TAKT TIME MÉDIO</h3>
+    <p class="big-number">5,8 MIN</p>
+    <span class="tag blue">-0,3min</span>
+    <p class="desc">OTIMIZAÇÃO</p>
+  </div>
+
+  <div class="painel-card">
+    <h3>ORDENS ATIVAS</h3>
+    <p class="big-number">19</p>
+    <span class="tag gray">+5</span>
+    <p class="desc">EM PRODUÇÃO</p>
+  </div>
+
+  <div class="painel-card">
+    <h3>TEMPO DE CONFIGURAÇÃO</h3>
+    <p class="big-number">14,6 MIN</p>
+    <span class="tag red">+1,6%</span>
+    <p class="desc">ACIMA DA META</p>
+  </div>
+
+</div>
+
+
+
+
+<!-- Rodapé -->
+<footer class="painel-footer">
+  <img src="../../flowlogo.png" class="footer-logo" alt="Flow Logo">
+  <p>V1. 1.2</p>
+</footer>
+
