@@ -1,0 +1,203 @@
+
+
+<header class="header">
+  <div class="container">
+    <img width="200px" src="../../flowlogo.png" alt="logo">
+
+    <div class="actions">
+      <button class="btn">Alerta ( 2 )</button>
+      <button class="btn">Relatórios</button>
+      <button class="online">Sistema Online</button>
+    </div>
+  </div>
+</header>
+
+
+<main class="cards-container">
+
+  <div class="card">
+    <h3 class="card-title">
+     <img width="30px" src="../../icon-TempoDeProduçãoHoje.png" alt="icon">
+
+      TEMPO DE PRODUÇÃO HOJE
+
+    </h3>
+    <p class="value">9H 42MIN</p>
+    <p class="sub">DE 10 HORAS PROGRAMADAS (96,25%)</p>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title">
+      <img width="30px" src="../../icon-PeçasProduzidas.png" alt="icon">
+      PEÇAS PRODUZIDAS
+    </h3>
+    <p class="value">521</p>
+    <p class="sub">META: 450 (115,77%)</p>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title">
+      <img width="30px" src="../../icon-CustoPorHora.png" alt="icon">
+      CUSTO POR HORA
+    </h3>
+    <p class="value">R$ 168,98</p>
+    <p class="sub">INCLUINDO MÃO DE OBRA</p>
+  </div>
+
+</main>
+<div class="menu-container">
+    <button class="menu-btn active" (click)="changeInfoToVisaoGeral()">
+        <img src="../../icon-visaoGeral.png" alt="" class="icon">
+        <span>VISÃO GERAL</span>
+    </button>
+
+    <button class="menu-btn" (click)="changeInfoToFluxo()">
+        <img src="../../icon-fluxo.png" alt="" class="icon">
+        <span>FLUXO</span>
+    </button>
+
+    <button class="menu-btn" (click)="changeInfoToTaktTime()">
+        <img src="../../icon-taktTime.png" alt="" class="icon">
+        <span>TAKT TIME</span>
+    </button>
+
+    <button class="menu-btn" id="pag-atual" (click)="changeInfoToMaquinas()">
+        <img src="../../icon-maquinas.png" alt="" class="icon">
+        <span>MÁQUINAS</span>
+    </button>
+
+    <button class="menu-btn" (click)="changeInfoToMateriais()">
+        <img src="../../icon-Materiais.png" alt="" class="icon">
+        <span>MATERIAIS</span>
+    </button>
+</div>
+
+
+<section class="status-container">
+
+    <h2 class="status-title">STATUS DAS LINHAS DE PRODUÇÃO</h2>
+    <p class="alert-manutencao">01 LINHA EM MANUTENÇÃO</p>
+
+    <div class="linhas-wrapper">
+
+        <!-- CARD 1 -->
+        <div class="linha-card">
+            <span class="tag ativo">ATIVO</span>
+            <h3 class="linha-nome">LINHA 122</h3>
+
+            <div class="info-bloco">
+                <p class="label">EFICIÊNCIA: 74%</p>
+                <div class="barra">
+                    <div class="barra-fill" style="width: 74%;"></div>
+                </div>
+            </div>
+
+            <p class="ordem">ORDEM ATUAL: 3223-344</p>
+            <p class="prox">PRÓXIMA MANUTENÇÃO:<br><strong>—</strong></p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="linha-card">
+            <span class="tag parado">PARADO</span>
+            <h3 class="linha-nome">LINHA 03</h3>
+
+            <div class="info-bloco">
+                <p class="label">EFICIÊNCIA:</p>
+                <div class="barra">
+                    <div class="barra-fill" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <p class="ordem">ORDEM ATUAL: —</p>
+            <p class="prox">PRÓXIMA MANUTENÇÃO:<br><strong>09/10/2025</strong></p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="linha-card">
+            <span class="tag manutencao">MANUTENÇÃO</span>
+            <h3 class="linha-nome">LINHA 540</h3>
+
+            <div class="info-bloco">
+                <p class="label">EFICIÊNCIA:</p>
+                <div class="barra">
+                    <div class="barra-fill" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <p class="ordem">ORDEM ATUAL: —</p>
+            <p class="prox">PRÓXIMA MANUTENÇÃO:<br><strong>AGORA</strong></p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="linha-card">
+            <span class="tag ativo">ATIVO</span>
+            <h3 class="linha-nome">LINHA 044</h3>
+
+            <div class="info-bloco">
+                <p class="label">EFICIÊNCIA: 85%</p>
+                <div class="barra">
+                    <div class="barra-fill" style="width: 85%;"></div>
+                </div>
+            </div>
+
+            <p class="ordem">ORDEM ATUAL: 5647-214</p>
+            <p class="prox">PRÓXIMA MANUTENÇÃO:<br><strong>31/03/2026</strong></p>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<div class="painel-container">
+
+  <!-- Título com ícone -->
+  <div class="painel-header">
+    <img src="../../icon-PainelDeProdução.png" class="painel-icon" alt="Ícone">
+    <h2>PAINEL DE PRODUÇÃO</h2>
+  </div>
+
+  <!-- Cards -->
+  <div class="painel-cards">
+
+    <div class="painel-card">
+      <h3>EFICIÊNCIA GERAL (OEE)</h3>
+      <p class="big-number">82,4%</p>
+      <span class="tag green">+2,4%</span>
+      <p class="desc">COMP. META ANTERIOR</p>
+    </div>
+
+    <div class="painel-card">
+      <h3>TAKT TIME MÉDIO</h3>
+      <p class="big-number">5,8 MIN</p>
+      <span class="tag blue">-0,3min</span>
+      <p class="desc">OTIMIZAÇÃO</p>
+    </div>
+
+    <div class="painel-card">
+      <h3>ORDENS ATIVAS</h3>
+      <p class="big-number">19</p>
+      <span class="tag gray">+5</span>
+      <p class="desc">EM PRODUÇÃO</p>
+    </div>
+
+    <div class="painel-card">
+      <h3>TEMPO DE CONFIGURAÇÃO</h3>
+      <p class="big-number">14,6 MIN</p>
+      <span class="tag red">+1,6%</span>
+      <p class="desc">ACIMA DA META</p>
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="painel-footer">
+    <img src="../../flowlogo.png" class="footer-logo" alt="Flow Logo">
+    <p>V1. 1.2</p>
+  </footer>
+
+</div>
+
+
+

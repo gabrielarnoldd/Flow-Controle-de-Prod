@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #460ba0; /* Roxo escuro */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: #9357f0; /* Roxo claro */
+    padding: 40px;
+    border-radius: 20px;
+    width: 380px;
+    text-align: center;
+    
+}
+
+.logo {
+    width: 240px;
+    margin-bottom: 25px;
+}
+
+.login-box input {
+    width: 96%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+   align-items: center;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    background: #d2b7ff; /* Botão claro */
+    text-align: center;
+}

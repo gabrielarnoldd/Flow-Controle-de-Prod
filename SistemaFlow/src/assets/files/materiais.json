@@ -1,0 +1,31 @@
+[
+{
+      "peca":"C3",
+      "aproveitamento":"83%",
+      "desperdicio":"17%",
+      "status_material":"Aproveito",
+      "id":"3223-344"
+
+ },
+ {
+    "peca":"56L",
+    "aproveitamento":"56%",
+    "desperdicio":"44%",
+    "status_material":"Desperdício",
+    "id":"6475-878"
+ },
+ {
+    "peca":"0V8",
+      "aproveitamento":"96%",
+      "desperdicio":"04%",
+      "status_material":"Aproveito",
+      "id":"4537-005"
+ },
+ {
+    "peca":"F43",
+      "aproveitamento":"68%",
+      "desperdicio":"32%",
+      "status_material":"Moderado",
+      "id":"5793-122"
+ }
+]
