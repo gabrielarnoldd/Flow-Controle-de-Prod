@@ -1,0 +1,42 @@
+[
+
+{
+    "id":"9742-453",
+    "sessao1":"Concluído",
+    "tempo_takt":"0H 20MIN",
+    "tempo_real":"0H 19MIN",
+    "progresso":"100%",
+    "operadores":"2 Operadores",
+    "eficiencia":"97%",
+
+
+
+    "sessao2":"Em Processo",
+    "tempo_takt2":"0H 35MIN",
+    "tempo_real2":"0H 17MIN",
+    "progresso2":"42%",
+    "operadores2":"4 Operadores",
+    "eficiencia2":"74%",
+
+
+
+    "sessao3":"Em espera",
+    "tempo_takt3":"0H 10MIN",
+    "tempo_real3":"0H 00MIN",
+    "progresso3":"00%",
+    "operadores3":"1 Operadores",
+    "eficiencia3":"00%",
+
+
+
+
+    "sessao4":"Em espera",
+    "tempo_takt4":"0H 5MIN",
+    "tempo_real4":"0H 00MIN",
+    "progresso4":"00%",
+    "operadores4":"2 Operadores",
+    "eficiencia4":"00%"
+
+}    
+
+]
