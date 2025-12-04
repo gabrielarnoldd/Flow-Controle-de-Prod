@@ -133,7 +133,7 @@ body {
     height: 22px;
 }
 
-/* hover */
+
 .menu-btn:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
@@ -244,7 +244,7 @@ body {
 
 
 
-/* Container dos cards */
+
 .painel-producao-flow {
     display: flex;
     justify-content: center;
@@ -253,9 +253,9 @@ body {
     max-width: 1200px;
 }
 
-/* Card individual */
+
 .box-producao-flow {
-    background-color: #e9d8fd; /* Roxo claro */
+    background-color: #e9d8fd;
     border-radius: 15px;
     padding: 20px;
     width: 250px;
@@ -267,9 +267,9 @@ body {
 
 }
 
-/* Título da peça */
+
 .titulo-peca-flow {
-    color: #4a148c; /* Roxo escuro */
+    color: #4a148c;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -277,7 +277,7 @@ body {
 
 }
 
-/* Status */
+
 .status-flow {
     display: inline-block;
     padding: 5px 10px;
@@ -290,20 +290,19 @@ body {
 }
 
 .status-concluido-flow {
-    background-color: #38a169; /* Verde */
+    background-color: #38a169;
     color: white;
       font-family: League system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
 .status-andamento-flow {
-    background-color: #4c6ef5; /* Azul */
+    background-color: #4c6ef5; 
     color: white;
       font-family: League system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
-/* Informações da peça */
 .info-flow {
   font-weight: bold;
     font-size: 14px;
@@ -313,7 +312,7 @@ body {
 
 }
 
-/* Barra de progresso */
+
 .barra-container-flow {
     margin-top: 15px;
     width: 100%;
@@ -341,9 +340,9 @@ body {
 }
 
 .barra-preenchida-flow {
-    background-color: #4a148c; /* Roxo escuro */
+    background-color: #4a148c; 
     height: 100%;
-    transition: width 0.3s ease;
+    transition: width 0.3s ease;
     
 }
 

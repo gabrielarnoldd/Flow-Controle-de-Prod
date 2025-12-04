@@ -133,14 +133,10 @@ body {
     height: 22px;
 }
 
-/* hover */
+
 .menu-btn:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
-
-
-
-
 
 .painel-container {
   display: flex;

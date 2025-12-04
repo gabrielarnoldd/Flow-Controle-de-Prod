@@ -57,9 +57,6 @@ body {
     cursor: pointer;
 }
 
-
-
-
 .cards-container {
   display: flex;
   justify-content: space-between;
@@ -133,14 +130,10 @@ body {
     height: 22px;
 }
 
-/* hover */
+
 .menu-btn:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
-
-
-
-
 
 .painel-container {
   display: flex;
@@ -287,15 +280,15 @@ body {
 }
 
 .status-adiantado {
-    background-color: #38A169; /* Verde */
+    background-color: #38A169; 
 }
 
 .status-atrasado {
-    background-color: #E53E3E; /* Vermelho */
+    background-color: #E53E3E; 
 }
 
 .status-bomprazo {
-    background-color: #2563EB; /* Azul */
+    background-color: #2563EB;
 }
 
 .estacao-info p {

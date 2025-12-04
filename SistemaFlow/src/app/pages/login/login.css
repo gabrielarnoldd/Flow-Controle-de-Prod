@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #460ba0; /* Roxo escuro */
+    background: #460ba0; 
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@ body {
 }
 
 .login-box {
-    background: #9357f0; /* Roxo claro */
+    background: #9357f0; 
     padding: 40px;
     border-radius: 20px;
     width: 380px;
@@ -45,6 +45,6 @@ body {
     cursor: pointer;
     font-weight: bold;
     font-size: 16px;
-    background: #d2b7ff; /* Botão claro */
+    background: #d2b7ff; 
     text-align: center;
 }
